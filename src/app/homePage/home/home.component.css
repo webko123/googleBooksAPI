@@ -1,0 +1,100 @@
+.root__container {
+    width: 98.5vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr auto;
+    position: relative;
+  }
+  
+
+  .main__header {
+    width: 110%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 4rem;
+    margin: 0;
+    align-items: center;
+    background-color: #673ab7;
+    transition: background-color 500ms linear;
+    animation: 1s ease-in-out 0ms 1 fadein;
+  }
+
+  .logo__text{
+
+margin-top: 20px;
+color: white;
+margin-left: 1.5rem;
+font-weight: 500;
+  }
+
+
+  .favorite{
+
+    color: white;
+    text-align: right;
+    margin-right: 17rem;
+    margin-top: -44px;
+    font-weight: 500;
+  }
+
+  .home{
+
+    color: white;
+    text-align: right;
+    margin-right: 25rem;
+    margin-top: -44px;
+    font-weight: 500;
+  }
+
+  .search{
+    margin-left: 2rem;
+    margin-bottom: 40rem;
+   
+  }
+
+  .input{
+    height: 24px;
+    
+  }
+
+
+ 
+.main-wrapper {
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+ 
+}
+  .search-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    
+  }
+
+   
+
+  .actions-btns-wrapper {
+    margin-top: 40px;
+    display: flex;
+  }
+    button {
+      margin: -20px 262px;
+      padding: 4px 8px;
+      font-size: 15px;
+   
+    }
+  
+
+
+  .books-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }

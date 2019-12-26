@@ -1,0 +1,22 @@
+
+
+<mat-card class="book-card">
+    <div class="title">{{book.title}}</div>
+    <img *ngIf="bookImgSrc" class="book-img" [src]="book.imageLinks.thumbnail">
+    <div>{{book.authors}}</div>
+    <button mat-raised-button class="button" color="primary" (click)="openDialog()">Read More</button>
+  </mat-card>
+  
+  
+  <app-popup *ngIf="isDialogOpen" 
+    [title]="book.title"
+    [categories]="book.categories"
+    [authors]="book.authors"
+    [publisher]="book.publisher"
+    [publishedDate]="book.publishedDate"
+    [isInFavourites]="checkIfBookInFavourites"
+    (closeDialog)="isDialogOpen = false"
+    (addBook)="addBook()"
+    (removeBook)="removeBook()">
+
+  </app-popup>

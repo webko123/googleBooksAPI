@@ -1,0 +1,39 @@
+.login-card{
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-top: 6rem;
+ 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   
+    
+  }
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    color: #673ab7;
+}
+
+
+.login-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .login-full-width {
+    width: 80%;
+  }
+
+  .button{
+   
+   width: 100px;
+   margin: 0.5rem 9.3rem;
+  }
+

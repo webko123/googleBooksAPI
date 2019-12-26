@@ -1,0 +1,34 @@
+
+ <div class="container">
+   
+        
+<mat-card class="login-card">
+
+   
+
+<div class="title">
+    <p>Login</p>
+</div>
+
+
+
+<form class="login-form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="login-full-width">
+      <input matInput placeholder="Username" [formControl]="usernameFormControl"
+             [errorStateMatcher]="matcher" >
+      
+     
+      <mat-error *ngIf="usernameFormControl.hasError('required')">
+        Username is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </form>
+
+
+<button mat-raised-button (click)="onSubmit()" class="button"  color="primary">Sign In</button>
+
+
+
+
+</mat-card>
+</div>

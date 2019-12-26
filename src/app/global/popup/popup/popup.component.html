@@ -1,0 +1,14 @@
+<div class="dialog" (click)="clickOutside()"></div>
+<div class="popup">
+  <div><span>name:</span>{{title}}</div>
+  <div><span>author:</span>{{authors}}</div>
+  <div><span>category:</span>{{categories}}</div>
+  <div><span>publisher:</span>{{publisher}}</div>
+  <div><span>posted on :</span>{{publishedDate}}</div>
+  <div class="btns-wrapper">
+    <button mat-raised-button color="primary" *ngIf="!isInFavourites" class="button" (click)="addToFavourites()">Add To Favourites</button>
+    <button mat-raised-button color="primary" *ngIf="isInFavourites"  class="button2" (click)="removeFromFavourites()">Remove From Favourites</button>
+   
+  </div>
+</div>
+

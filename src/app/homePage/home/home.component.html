@@ -1,0 +1,43 @@
+<div class="root__container" >
+    <header  class="main__header">
+  
+       
+        <h3 class="logo__text">My Books API </h3>
+
+        <p class="favorite" (click)="goToFavorite()" >My Favourites</p>
+
+        <p class="home" (click)="goToHome()" >Home</p>
+       
+       
+    </header>
+  
+
+      <div class="main-wrapper">
+        <div class="search-wrapper">
+          <mat-form-field class="example-full-width">
+          
+          <input matInput placeholder="Type Book Name"   #searchBox (input)="search(searchBox.value)">
+        </mat-form-field>
+        </div>
+       
+        
+        <div class="actions-btns-wrapper" *ngIf="searchBox.value">
+          
+          <button mat-raised-button color="primary" (click)="prev()"> back</button>
+          <button mat-raised-button color="primary" (click)="next()">Next </button>
+          
+        </div>
+        <div class="books-wrapper">
+          <app-book *ngFor="let book of myBooks$ | async" [book]="book">
+          </app-book>
+        </div>
+      </div>
+     
+  </div>
+
+
+  
+
+
+
+

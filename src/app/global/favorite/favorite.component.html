@@ -1,0 +1,22 @@
+<div class="root__container" >
+  <header  class="main__header">
+
+     
+      <h3 class="logo__text">My Books API </h3>
+
+      <p class="favorite" (click)="goToFavorite()" >My Favourites</p>
+
+      <p class="home" (click)="goToHome()" >Home</p>
+     
+
+  </header>
+
+
+
+<div class="books-wrapper">
+    <p class="sorry" *ngIf="!favourites.length">Sorry, you didn't add books to favourites yet</p>
+    <app-book *ngFor="let book of favourites" [book]="book"></app-book>
+  </div>
+
+</div>
+

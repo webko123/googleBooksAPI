@@ -1,0 +1,64 @@
+.books-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    min-height: 100vh;
+  }
+  
+
+  .root__container {
+    width: 98.5vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr auto;
+    position: relative;
+  }
+  
+
+  .main__header {
+    width: 110%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 4rem;
+    margin: 0;
+    align-items: center;
+    background-color: #673ab7;
+    transition: background-color 500ms linear;
+    animation: 1s ease-in-out 0ms 1 fadein;
+  }
+
+  .logo__text{
+
+margin-top: 20px;
+color: white;
+margin-left: 1.5rem;
+font-weight: 500;
+  }
+
+
+  .favorite{
+
+    color: white;
+    text-align: right;
+    margin-right: 17rem;
+    margin-top: -44px;
+    font-weight: 500;
+  }
+
+  .home{
+
+    color: white;
+    text-align: right;
+    margin-right: 25rem;
+    margin-top: -44px;
+    font-weight: 500;
+  }
+
+  .sorry{
+    font-weight: 500;
+    margin-top: 145px;
+    font-size: 18px;
+  }
